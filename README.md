@@ -190,7 +190,7 @@ setInterval(() => {
 
 ## Автор
 
-DataHints
+Evgeny Kuznetsov (Full Stack Data Analyst at JetStyle) / DataHints
 
 ## Версия
 
