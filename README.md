@@ -1,4 +1,4 @@
-# DataHints Contact Button by Evgeny Kuznetsov
+# Whatsapp / Telegram Contact Button by Evgeny Kuznetsov (JetStyle/DataHints)
 
 Плавающий виджет контактов для WordPress и GTM, который автоматически передает ClientId из Яндекс Метрики (`_ym_uid`) в ссылки на Telegram и WhatsApp для идентификации посетителей в CRM-системе.
 
