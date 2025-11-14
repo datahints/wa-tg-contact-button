@@ -1,8 +1,8 @@
 (function () {
     const TELEGRAM_URL = 'https://t.me/datahints_bot?start=';
     const WHATSAPP_BASE_URL = 'https://api.whatsapp.com/send/';
-    const WHATSAPP_DEFAULT_PHONE = '73433848481';
-    const WHATSAPP_MESSAGE_TEMPLATE = 'Добрый день, у меня есть вопрос... (Номер моего обращения:{clientId}, пожалуйста не удаляйте этот текст).';
+    const WHATSAPP_DEFAULT_PHONE = '73431234567';
+    const WHATSAPP_MESSAGE_TEMPLATE = 'Добрый день, у меня есть вопрос... (Номер моего обращения: {clientId}, пожалуйста не удаляйте этот текст).';
     const CLIENT_ID_FALLBACK = '4-8-15-16-23-42';
 
     const container = document.getElementById('datahints-contact-button');
