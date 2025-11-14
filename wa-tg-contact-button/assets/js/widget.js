@@ -1,11 +1,11 @@
 (function () {
-    const TELEGRAM_URL = 'https://t.me/jetstyle_bot?start=';
+    const TELEGRAM_URL = 'https://t.me/datahints_bot?start=';
     const WHATSAPP_BASE_URL = 'https://api.whatsapp.com/send/';
     const WHATSAPP_DEFAULT_PHONE = '73433848481';
     const WHATSAPP_MESSAGE_TEMPLATE = 'Добрый день, у меня есть вопрос... (Номер моего обращения:{clientId}, пожалуйста не удаляйте этот текст).';
     const CLIENT_ID_FALLBACK = '4-8-15-16-23-42';
 
-    const container = document.getElementById('jetstyle-contact-button');
+    const container = document.getElementById('datahints-contact-button');
     if (!container) {
         return;
     }
@@ -68,8 +68,8 @@
         const telegramHref = buildTelegramHref(actualClientId);
         const whatsappHref = buildWhatsappHref(actualClientId);
 
-        const telegramLink = container.querySelector('.jetstyle-contact-button__item--telegram');
-        const whatsappLink = container.querySelector('.jetstyle-contact-button__item--whatsapp');
+        const telegramLink = container.querySelector('.datahints-contact-button__item--telegram');
+        const whatsappLink = container.querySelector('.datahints-contact-button__item--whatsapp');
 
         if (telegramLink) {
             telegramLink.href = telegramHref;
@@ -97,9 +97,9 @@
     `;
 
     container.innerHTML = `
-        <a class="jetstyle-contact-button__item jetstyle-contact-button__item--telegram" href="${telegramHref}" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram">${telegramSVG}</a>
-        <a class="jetstyle-contact-button__item jetstyle-contact-button__item--whatsapp" href="${whatsappHref}" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp">${whatsappSVG}</a>
-        <button type="button" class="jetstyle-contact-button__main" aria-expanded="false" aria-label="Открыть контакты"></button>
+        <a class="datahints-contact-button__item datahints-contact-button__item--telegram" href="${telegramHref}" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram">${telegramSVG}</a>
+        <a class="datahints-contact-button__item datahints-contact-button__item--whatsapp" href="${whatsappHref}" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp">${whatsappSVG}</a>
+        <button type="button" class="datahints-contact-button__main" aria-expanded="false" aria-label="Открыть контакты"></button>
     `;
 
     if (!clientId) {
@@ -120,16 +120,16 @@
         }, checkInterval);
     }
 
-    const mainButton = container.querySelector('.jetstyle-contact-button__main');
+    const mainButton = container.querySelector('.datahints-contact-button__main');
     const mainStates = [
         {
             name: 'telegram',
-            className: 'jetstyle-contact-button__main--telegram',
+            className: 'datahints-contact-button__main--telegram',
             icon: telegramSVG
         },
         {
             name: 'whatsapp',
-            className: 'jetstyle-contact-button__main--whatsapp',
+            className: 'datahints-contact-button__main--whatsapp',
             icon: whatsappSVG
         }
     ];
@@ -166,8 +166,8 @@
         }
     }
     const toggleOpen = (forceValue) => {
-        const isOpen = forceValue !== undefined ? forceValue : !container.classList.contains('jetstyle-contact-button--open');
-        container.classList.toggle('jetstyle-contact-button--open', isOpen);
+        const isOpen = forceValue !== undefined ? forceValue : !container.classList.contains('datahints-contact-button--open');
+        container.classList.toggle('datahints-contact-button--open', isOpen);
         if (mainButton) {
             mainButton.setAttribute('aria-expanded', String(isOpen));
         }

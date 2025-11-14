@@ -1,9 +1,9 @@
-#jetstyle-contact-button,
-#jetstyle-contact-button * {
+#datahints-contact-button,
+#datahints-contact-button * {
     box-sizing: border-box;
 }
 
-#jetstyle-contact-button {
+#datahints-contact-button {
     position: fixed;
     bottom: 24px;
     right: 24px;
@@ -15,7 +15,7 @@
     pointer-events: none;
 }
 
-#jetstyle-contact-button .jetstyle-contact-button__item {
+#datahints-contact-button .datahints-contact-button__item {
     pointer-events: auto;
     text-decoration: none;
     display: flex;
@@ -36,21 +36,21 @@
     text-shadow: none;
 }
 
-#jetstyle-contact-button .jetstyle-contact-button__item--telegram {
+#datahints-contact-button .datahints-contact-button__item--telegram {
     background: linear-gradient(135deg, #37aee2 0%, #1e96c8 100%);
 }
 
-#jetstyle-contact-button .jetstyle-contact-button__item--whatsapp {
+#datahints-contact-button .datahints-contact-button__item--whatsapp {
     background: linear-gradient(135deg, #43d854 0%, #009688 100%);
 }
 
-#jetstyle-contact-button .jetstyle-contact-button__item svg {
+#datahints-contact-button .datahints-contact-button__item svg {
     width: 30px;
     height: 30px;
     fill: currentColor;
 }
 
-#jetstyle-contact-button .jetstyle-contact-button__main {
+#datahints-contact-button .datahints-contact-button__main {
     pointer-events: auto;
     cursor: pointer;
     background: #242424;
@@ -65,7 +65,7 @@
     border-radius: 50%;
     position: relative;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-    animation: jetstyle-pulse 2.2s infinite;
+    animation: datahints-pulse 2.2s infinite;
     border: none;
     padding: 0;
     font: inherit;
@@ -74,48 +74,48 @@
     filter: none;
 }
 
-#jetstyle-contact-button .jetstyle-contact-button__main svg {
+#datahints-contact-button .datahints-contact-button__main svg {
     width: 32px;
     height: 32px;
     fill: currentColor;
 }
 
-#jetstyle-contact-button .jetstyle-contact-button__main--telegram {
+#datahints-contact-button .datahints-contact-button__main--telegram {
     background: linear-gradient(135deg, #37aee2 0%, #1e96c8 100%);
 }
 
-#jetstyle-contact-button .jetstyle-contact-button__main--whatsapp {
+#datahints-contact-button .datahints-contact-button__main--whatsapp {
     background: linear-gradient(135deg, #43d854 0%, #009688 100%);
 }
 
-#jetstyle-contact-button .jetstyle-contact-button__main::after {
+#datahints-contact-button .datahints-contact-button__main::after {
     content: '';
     position: absolute;
     inset: -12px;
     border-radius: 50%;
     border: 2px solid rgba(36, 36, 36, 0.3);
     opacity: 0;
-    animation: jetstyle-pulse-ring 2.2s infinite;
+    animation: datahints-pulse-ring 2.2s infinite;
 }
 
-#jetstyle-contact-button.jetstyle-contact-button--open .jetstyle-contact-button__item {
+#datahints-contact-button.datahints-contact-button--open .datahints-contact-button__item {
     opacity: 1;
     transform: translateY(0);
 }
 
-#jetstyle-contact-button.jetstyle-contact-button--open .jetstyle-contact-button__item:nth-child(1) {
+#datahints-contact-button.datahints-contact-button--open .datahints-contact-button__item:nth-child(1) {
     transition-delay: 0.05s;
 }
 
-#jetstyle-contact-button.jetstyle-contact-button--open .jetstyle-contact-button__item:nth-child(2) {
+#datahints-contact-button.datahints-contact-button--open .datahints-contact-button__item:nth-child(2) {
     transition-delay: 0.1s;
 }
 
-#jetstyle-contact-button .jetstyle-contact-button__label {
+#datahints-contact-button .datahints-contact-button__label {
     display: none;
 }
 
-@keyframes jetstyle-pulse {
+@keyframes datahints-pulse {
     0% {
         transform: scale(1);
         box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
@@ -130,7 +130,7 @@
     }
 }
 
-@keyframes jetstyle-pulse-ring {
+@keyframes datahints-pulse-ring {
     0% {
         transform: scale(0.6);
         opacity: 0.8;
@@ -146,20 +146,20 @@
 }
 
 @media (hover: hover) {
-    #jetstyle-contact-button .jetstyle-contact-button__item:hover {
+    #datahints-contact-button .datahints-contact-button__item:hover {
         transform: translateY(0) scale(1.05);
     }
 }
 
 @media screen and (max-width: 767px) {
-    #jetstyle-contact-button {
+    #datahints-contact-button {
         bottom: 16px;
         right: 16px;
         gap: 8px;
     }
 
-    #jetstyle-contact-button .jetstyle-contact-button__item,
-    #jetstyle-contact-button .jetstyle-contact-button__main {
+    #datahints-contact-button .datahints-contact-button__item,
+    #datahints-contact-button .datahints-contact-button__main {
         width: 52px;
         height: 52px;
     }

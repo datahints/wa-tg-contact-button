@@ -1,16 +1,16 @@
 <?php
 /**
- * Plugin Name: Jetstyle Contact Button
+ * Plugin Name: DataHints Contact Button
  * Description: Floating animated button linking to Telegram or WhatsApp with _ym_uid client id.
  * Version: 1.0.0
- * Author: Jetstyle
+ * Author: DataHints
  */
 
 if (!defined('ABSPATH')) {
     exit;
 }
 
-class Jetstyle_Contact_Button
+class Datahints_Contact_Button
 {
     private const VERSION = '1.0.0';
 
@@ -25,14 +25,14 @@ class Jetstyle_Contact_Button
         $plugin_url = plugin_dir_url(__FILE__);
 
         wp_enqueue_style(
-            'jetstyle-contact-button',
+            'datahints-contact-button',
             $plugin_url . 'assets/css/widget.css',
             [],
             self::VERSION
         );
 
         wp_enqueue_script(
-            'jetstyle-contact-button',
+            'datahints-contact-button',
             $plugin_url . 'assets/js/widget.js',
             [],
             self::VERSION,
@@ -42,9 +42,9 @@ class Jetstyle_Contact_Button
 
     public function render_widget(): void
     {
-        echo '<div id="jetstyle-contact-button" class="jetstyle-contact-button" aria-live="polite" aria-label="Свяжитесь с нами"></div>';
+        echo '<div id="datahints-contact-button" class="datahints-contact-button" aria-live="polite" aria-label="Свяжитесь с нами"></div>';
     }
 }
 
-new Jetstyle_Contact_Button();
+new Datahints_Contact_Button();
 

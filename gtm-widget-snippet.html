@@ -1,12 +1,12 @@
-<div id="jetstyle-contact-button" class="jetstyle-contact-button" aria-live="polite" aria-label="Свяжитесь с нами"></div>
+<div id="datahints-contact-button" class="datahints-contact-button" aria-live="polite" aria-label="Свяжитесь с нами"></div>
 
 <style>
-  #jetstyle-contact-button,
-  #jetstyle-contact-button * {
+  #datahints-contact-button,
+  #datahints-contact-button * {
     box-sizing: border-box;
   }
 
-  #jetstyle-contact-button {
+  #datahints-contact-button {
     position: fixed;
     bottom: 24px;
     right: 24px;
@@ -18,7 +18,7 @@
     pointer-events: none;
   }
 
-  #jetstyle-contact-button .jetstyle-contact-button__item {
+  #datahints-contact-button .datahints-contact-button__item {
     pointer-events: auto;
     text-decoration: none;
     display: flex;
@@ -40,21 +40,21 @@
   }
 
 
-  #jetstyle-contact-button .jetstyle-contact-button__item--telegram {
+  #datahints-contact-button .datahints-contact-button__item--telegram {
     background: linear-gradient(135deg, #37aee2 0%, #1e96c8 100%);
   }
 
-  #jetstyle-contact-button .jetstyle-contact-button__item--whatsapp {
+  #datahints-contact-button .datahints-contact-button__item--whatsapp {
     background: linear-gradient(135deg, #43d854 0%, #009688 100%);
   }
 
-  #jetstyle-contact-button .jetstyle-contact-button__item svg {
+  #datahints-contact-button .datahints-contact-button__item svg {
     width: 30px;
     height: 30px;
     fill: currentColor;
   }
 
-  #jetstyle-contact-button .jetstyle-contact-button__main {
+  #datahints-contact-button .datahints-contact-button__main {
     pointer-events: auto;
     cursor: pointer;
     background: #242424;
@@ -69,7 +69,7 @@
     border-radius: 50%;
     position: relative;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-    animation: jetstyle-pulse 2.2s infinite;
+    animation: datahints-pulse 2.2s infinite;
     border: none;
     padding: 0;
     font: inherit;
@@ -78,44 +78,44 @@
     filter: none;
   }
 
-  #jetstyle-contact-button .jetstyle-contact-button__main svg {
+  #datahints-contact-button .datahints-contact-button__main svg {
     width: 32px;
     height: 32px;
     fill: currentColor;
   }
 
-  #jetstyle-contact-button .jetstyle-contact-button__main--telegram {
+  #datahints-contact-button .datahints-contact-button__main--telegram {
     background: linear-gradient(135deg, #37aee2 0%, #1e96c8 100%);
   }
 
-  #jetstyle-contact-button .jetstyle-contact-button__main--whatsapp {
+  #datahints-contact-button .datahints-contact-button__main--whatsapp {
     background: linear-gradient(135deg, #43d854 0%, #009688 100%);
   }
 
-  #jetstyle-contact-button .jetstyle-contact-button__main::after {
+  #datahints-contact-button .datahints-contact-button__main::after {
     content: '';
     position: absolute;
     inset: -12px;
     border-radius: 50%;
     border: 2px solid rgba(36, 36, 36, 0.3);
     opacity: 0;
-    animation: jetstyle-pulse-ring 2.2s infinite;
+    animation: datahints-pulse-ring 2.2s infinite;
   }
 
-  #jetstyle-contact-button.jetstyle-contact-button--open .jetstyle-contact-button__item {
+  #datahints-contact-button.datahints-contact-button--open .datahints-contact-button__item {
     opacity: 1;
     transform: translateY(0);
   }
 
-  #jetstyle-contact-button.jetstyle-contact-button--open .jetstyle-contact-button__item:nth-child(1) {
+  #datahints-contact-button.datahints-contact-button--open .datahints-contact-button__item:nth-child(1) {
     transition-delay: 0.05s;
   }
 
-  #jetstyle-contact-button.jetstyle-contact-button--open .jetstyle-contact-button__item:nth-child(2) {
+  #datahints-contact-button.datahints-contact-button--open .datahints-contact-button__item:nth-child(2) {
     transition-delay: 0.1s;
   }
 
-  @keyframes jetstyle-pulse {
+  @keyframes datahints-pulse {
     0% {
       transform: scale(1);
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
@@ -130,7 +130,7 @@
     }
   }
 
-  @keyframes jetstyle-pulse-ring {
+  @keyframes datahints-pulse-ring {
     0% {
       transform: scale(0.6);
       opacity: 0.8;
@@ -146,20 +146,20 @@
   }
 
   @media (hover: hover) {
-    #jetstyle-contact-button .jetstyle-contact-button__item:hover {
+    #datahints-contact-button .datahints-contact-button__item:hover {
       transform: translateY(0) scale(1.05);
     }
   }
 
   @media screen and (max-width: 767px) {
-    #jetstyle-contact-button {
+    #datahints-contact-button {
       bottom: 16px;
       right: 16px;
       gap: 8px;
     }
 
-    #jetstyle-contact-button .jetstyle-contact-button__item,
-    #jetstyle-contact-button .jetstyle-contact-button__main {
+    #datahints-contact-button .datahints-contact-button__item,
+    #datahints-contact-button .datahints-contact-button__main {
       width: 52px;
       height: 52px;
     }
@@ -168,21 +168,21 @@
 
 <script>
   (function () {
-    if (document.getElementById('jetstyle-contact-button--initialized')) {
+    if (document.getElementById('datahints-contact-button--initialized')) {
       return;
     }
 
-    var container = document.getElementById('jetstyle-contact-button');
+    var container = document.getElementById('datahints-contact-button');
     if (!container) {
       return;
     }
 
     var marker = document.createElement('span');
-    marker.id = 'jetstyle-contact-button--initialized';
+    marker.id = 'datahints-contact-button--initialized';
     marker.style.display = 'none';
     container.appendChild(marker);
 
-    var TELEGRAM_URL = 'https://t.me/jetstyle_bot?start=';
+    var TELEGRAM_URL = 'https://t.me/datahints_bot?start=';
     var WHATSAPP_BASE_URL = 'https://api.whatsapp.com/send/';
     var WHATSAPP_DEFAULT_PHONE = '73433848481';
     var WHATSAPP_MESSAGE_TEMPLATE = '(Номер моего обращения:{clientId}, пожалуйста не удаляйте этот текст) Добрый день, у меня есть вопрос....';
@@ -256,8 +256,8 @@
       var telegramHref = buildTelegramHref(actualClientId);
       var whatsappHref = buildWhatsappHref(actualClientId);
 
-      var telegramLink = container.querySelector('.jetstyle-contact-button__item--telegram');
-      var whatsappLink = container.querySelector('.jetstyle-contact-button__item--whatsapp');
+      var telegramLink = container.querySelector('.datahints-contact-button__item--telegram');
+      var whatsappLink = container.querySelector('.datahints-contact-button__item--whatsapp');
 
       if (telegramLink) {
         telegramLink.href = telegramHref;
@@ -273,9 +273,9 @@
     var whatsappHref = buildWhatsappHref(clientIdForLinks);
 
     container.innerHTML = '\
-        <a class="jetstyle-contact-button__item jetstyle-contact-button__item--telegram" href="' + telegramHref + '" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram">' + telegramSVG + '</a>\
-        <a class="jetstyle-contact-button__item jetstyle-contact-button__item--whatsapp" href="' + whatsappHref + '" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp">' + whatsappSVG + '</a>\
-        <button type="button" class="jetstyle-contact-button__main" aria-expanded="false" aria-label="Открыть контакты"></button>\
+        <a class="datahints-contact-button__item datahints-contact-button__item--telegram" href="' + telegramHref + '" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram">' + telegramSVG + '</a>\
+        <a class="datahints-contact-button__item datahints-contact-button__item--whatsapp" href="' + whatsappHref + '" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp">' + whatsappSVG + '</a>\
+        <button type="button" class="datahints-contact-button__main" aria-expanded="false" aria-label="Открыть контакты"></button>\
     ';
 
     if (!clientId) {
@@ -296,16 +296,16 @@
       }, checkInterval);
     }
 
-    var mainButton = container.querySelector('.jetstyle-contact-button__main');
+    var mainButton = container.querySelector('.datahints-contact-button__main');
     var mainStates = [
       {
         name: 'telegram',
-        className: 'jetstyle-contact-button__main--telegram',
+        className: 'datahints-contact-button__main--telegram',
         icon: telegramSVG
       },
       {
         name: 'whatsapp',
-        className: 'jetstyle-contact-button__main--whatsapp',
+        className: 'datahints-contact-button__main--whatsapp',
         icon: whatsappSVG
       }
     ];
@@ -348,8 +348,8 @@
     }
 
     function toggleOpen(forceValue) {
-      var isOpen = forceValue !== undefined ? forceValue : !container.classList.contains('jetstyle-contact-button--open');
-      container.classList.toggle('jetstyle-contact-button--open', isOpen);
+      var isOpen = forceValue !== undefined ? forceValue : !container.classList.contains('datahints-contact-button--open');
+      container.classList.toggle('datahints-contact-button--open', isOpen);
       if (mainButton) {
         mainButton.setAttribute('aria-expanded', String(isOpen));
       }
