@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+.eggs/
+.build/
+dist/
+build/
+.venv/
+venv/
+.env
+.env.*
+*.sqlite3
+
+# Tools
+pip-wheel-metadata/
+pytest_cache/
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
