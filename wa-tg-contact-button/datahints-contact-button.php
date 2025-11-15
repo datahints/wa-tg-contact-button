@@ -3,7 +3,7 @@
  * Plugin Name: DataHints Contact Button
  * Description: Floating animated button linking to Telegram or WhatsApp with _ym_uid client id.
  * Version: 1.0.0
- * Author: DataHints
+ * Author: Evgeny Kuznetsov (JetStyle / DataHints)
  */
 
 if (!defined('ABSPATH')) {
